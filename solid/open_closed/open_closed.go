@@ -38,7 +38,7 @@ func countWordsUrl() int {
 // 	return countWords(string(resp.Body()))
 // }
 
-// be able to override a struct
+// 1:  be able to override a struct
 
 type A struct{ year int }
 
@@ -54,7 +54,7 @@ func (b B) Greet() {
 	fmt.Println("Welcome to GolangUK", b.year)
 }
 
-// pattern strategy
+// 2: interface & struct; with pattern strategy
 type Calculer interface {
 	Execute(int, int) int
 }
